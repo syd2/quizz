@@ -29,10 +29,11 @@ export default function QuestionScreen() {
   const navigation = useNavigation();
   const questions = item.questions;
   const title = item.title;
-
   const options = [
-    questions[currentQuestion].correctAnswer,
-    ...questions[currentQuestion].incorrectAnswers,
+    ...new Set([
+      questions[currentQuestion].correctAnswer,
+      ...questions[currentQuestion].incorrectAnswers,
+    ]),
   ];
 
   const checkAnswer = (selectedOption) => {
