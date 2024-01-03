@@ -236,18 +236,7 @@ export default function QuestionScreen() {
               end={{ x: 0, y: 0 }}
               style={styles.container}
             >
-              <View
-                style={{
-                  backgroundColor: "white",
-                  width: "90%",
-                  borderRadius: 20,
-                  padding: 20,
-
-                  elevation: 20,
-
-                  alignItems: "center",
-                }}
-              >
+              <View>
                 <Text className="text-xl font-semibold">
                   Thank You!! here is your result below
                 </Text>
@@ -284,11 +273,16 @@ export default function QuestionScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    width: 125,
-    height: 137,
+    width: "90%",
+    borderRadius: 20,
     padding: 20,
-    borderRadius: 15,
-    elevation: 8,
+    width: "90%",
+    borderRadius: 20,
+    padding: 20,
+
+    elevation: 20,
+
+    alignItems: "center",
     margin: 10,
     overflow: "hidden",
   },
